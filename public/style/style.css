@@ -1,0 +1,8 @@
+.content-box {
+    width: 100%;
+    min-height: 320px;
+}
+.home__content {
+    padding-left: 160px; 
+    padding-right:160px; 
+} 
