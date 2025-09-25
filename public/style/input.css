@@ -1,1 +1,4 @@
-@import "tailwindcss" 
+@import "tailwindcss"; 
+.navbar__link__effect {
+    @apply cursor-pointer hover:cursor-pointer relative after:absolute after:w-0 after:h-0.5 after:bg-orange-500 after:left-0 hover:after:transition-all hover:after:w-full hover:after:duration-300 after:top-full
+}

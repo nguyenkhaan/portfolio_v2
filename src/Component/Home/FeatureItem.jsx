@@ -1,9 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { motion } from 'framer-motion'
 function FeatureItem() {
     return (
         // Bo flex-1 di la duoc
-        <div className='flex items-stretch h-30 md:h-42 justify-between gap-5 pb-6 pt-0 border-b-gray-200 border-b-1'>
+        <motion.div
+            className='flex items-stretch h-30 md:h-42 justify-between gap-5 pb-6 pt-0 border-b-gray-200 border-b-1'
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+
+        >
             <div className='bg-gray-800 md:w-50 w-30 md:gap-8 gap-4 h-full'></div>
             <div className='flex items-start flex-1 justify-between h-full flex-col'>
                 <h2 className='font-semibold text-lg md:text-2xl'>Vibrant Portraits of 2020</h2>
@@ -13,7 +20,7 @@ function FeatureItem() {
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default FeatureItem

@@ -10,6 +10,7 @@ function Layout()
 {
     return (
         <div>
+     
             <Navbar /> 
             <Routes>
                 {router.map((routeInfo) => {
