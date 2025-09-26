@@ -17,7 +17,7 @@ function Profile()
                 </span>
                 <button className='py-2.5 px-6 hover:scale-[1.1] hover:cursor-pointer hover:transition-all hover:duration-300 hover:ease-in-out font-bold text-base text-white rounded-sm'
                         style = {{backgroundColor: '#FF6464'}}
-                >Dowload Resume</button>
+                ><i class="bi bi-arrow-down-square-fill"></i> Dowload my CV</button>
             </div> 
             <div className='flex-1 flex items-center justify-end'>
                 <div 

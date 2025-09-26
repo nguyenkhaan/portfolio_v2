@@ -6,3 +6,17 @@
     padding-left: 160px; 
     padding-right:160px; 
 } 
+@media print {
+    @page {
+        size: A4; 
+        margin: 8mm 8mm 8mm 8mm; 
+    }
+    .no-print {
+        display: none !important; 
+    }
+    body {
+        padding: 0; 
+    } 
+    .break-inside-avoid { break-inside: avoid; page-break-inside: avoid; }
+
+}
