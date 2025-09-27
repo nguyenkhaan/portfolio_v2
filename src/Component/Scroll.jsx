@@ -12,7 +12,7 @@ function Scroll()
         mass: 0.2
     })
     return (
-        <motion.div className="fixed top-0 left-0 w-full h-1 bg-red-600"
+        <motion.div className="fixed top-0 left-0 w-full h-1 bg-red-600 z-999999"
             style={{scaleX: smoothScale , transformOrigin: 'left'}}
         ></motion.div>
     )

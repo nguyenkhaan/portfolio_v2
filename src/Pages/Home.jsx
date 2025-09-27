@@ -7,6 +7,7 @@ import RecentBlogs from '../Component/Home/RecentBlogs'
 import Feature from '../Component/Home/Feature'
 import Foreground from '../Component/Home/Foreground' 
 import componentToPrint from '../Services/getComponentToPrint'
+import JobDetail from '../Component/Home/JobDetail'
 function Home()
 {
     const componentRef = useRef(); 
@@ -19,6 +20,7 @@ function Home()
             <Profile />        
             <RecentBlogs /> 
             <Feature />    
+            <JobDetail /> 
             <Foreground />  
         </div>
     )
