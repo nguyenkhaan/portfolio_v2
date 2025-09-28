@@ -2,10 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import InputCV from '../CV/Input'
 function About() {
-        const initialProfile = `Em là sinh viên lớp Cứ nhân Tài Năng ngành công nghệ thông tin HCMUS. Với kinh nghiệm 4 năm làm gia sư
-    và niềm đam mê lập trình, đặc biệt là C++. Cùng với thành tích về học thuật đã hỗ trợ nhiều học sinh - sinh viên nằm vững kiến
-    thức lập trình, tư duy giải thuật và kĩ năng xử lý bài tập. Mục tiêu của em là giúp việc học Tin học trở nên thực tiễn, dễ
-    hiểu và thú vị.`
+    const initialProfile = `
+    Sinh viên Kỹ thuật Phần mềm với đam mê phát triển ứng dụng và xây dựng giải pháp công nghệ. 
+    Thành thạo C++, JavaScript, HTML/CSS và Python, có tư duy phân tích, giải quyết vấn đề và làm việc nhóm hiệu quả. 
+    Hướng tới việc áp dụng kiến thức và kỹ năng để tạo ra sản phẩm phần mềm chất lượng, sáng tạo và bền vững.`
     return (
         <div className='bg-gray-800 w-full text-white text-base p-4'>
             <h2 className='font-semibold text-2xl uppercase mb-2'>VỀ BẢN THÂN</h2>

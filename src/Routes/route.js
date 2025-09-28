@@ -3,7 +3,7 @@ import Blog from "../Pages/Blog"
 import CV from "../Pages/CV"
 const router = [
     {
-        path: '/home', 
+        path: '/', 
         element: Home 
     }, 
     {
