@@ -42,6 +42,7 @@
     border: none;
     box-shadow: none;  /* nếu còn shadow cũng loại bỏ */
     overflow: none; 
+    min-width: 120px;
 }
 .ql-container .ql-snow {
     padding: 0 !important; 
@@ -49,10 +50,13 @@
 .ql-editor {
     padding: 0 !important; 
     border-radius: 4px;
-    display: inline-block; 
-    max-width: 400px;
+    display: inline-block;
     min-width: 12px;
 }
 .ql-editor:focus {
     background-color: #E5E7EB;
+    color: black; 
+}
+.input__container:hover .input__icon {
+    display: flex;
 }

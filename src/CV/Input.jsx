@@ -4,7 +4,7 @@ import { useState , useRef , useEffect } from 'react';
 import { Editor } from 'primereact/editor';
 import renderCustomerToolbar from '../Services/customToolbar';
 
-function InputCV({initialValue , propsStyle}) {
+function InputCV({initialValue = '' , editorStyle = {} , containerStyle = ''}) {
     const [text, setText] = useState(initialValue);
     const [focused, setFocused] = useState(false)
     const editorRef = useRef(null);
@@ -17,10 +17,10 @@ function InputCV({initialValue , propsStyle}) {
         }
     }, [focused])
     return (
-        <div ref = { editorRef } className = 'relative w-full flex-1' >
+        <div ref = { editorRef } className = {`relative inline-block text-justify ${containerStyle}`} >
             <Editor
                 value={text}
-                onTextChange={(e) => setText(e.htmlValue)} style={{border: 0, fontSize: '16px', padding: 0 , ...propsStyle }}
+                onTextChange={(e) => setText(e.htmlValue)} style={{border: 0, fontSize: '16px', padding: 0, width: '100%', alignItems: 'center', flex: 1, ...editorStyle }}
                 onBlur={(e) => {
                     console.log('Ban da blur ra ngoai')
                     if (editorRef.current && e.relatedTarget && editorRef.current.contains(e.relatedTarget)) return;
