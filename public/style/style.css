@@ -9,7 +9,6 @@
 @media print {
     @page {
         size: A4; 
-        margin: 8mm 8mm 8mm 8mm; 
     }
     .no-print {
         display: none !important; 
@@ -18,6 +17,14 @@
         padding: 0; 
     } 
     .break-inside-avoid { break-inside: avoid; page-break-inside: avoid; }
+    /* CHAT GPT */
+    .print-container { 
+        width: 210mm;       /* đúng chiều ngang A4 */
+        
+        margin: 0 auto;     /* căn giữa nếu có viền */
+        box-shadow: none;   /* bỏ bóng khi in */
+        border: none;       /* tùy ý */
+    }
 
 }
 [contenteditable]:empty::before {
@@ -59,4 +66,9 @@
 }
 .input__container:hover .input__icon {
     display: flex;
+}
+.ql-editor ul,
+.ql-editor ol {
+  padding-left: 0 !important;   /* hoặc 1em, tuỳ bạn */
+  margin-left: 0;      /* bỏ margin mặc định của browser */
 }

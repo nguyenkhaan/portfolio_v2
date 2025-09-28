@@ -2,14 +2,38 @@ import React, { useEffect, useRef, useState } from 'react'
 import ReactDOM from 'react-dom'
 import InputCV from './Input'
 function CVHeader() {
-
-    return (
+    const inputRef = useRef(null); 
+    const [avatar , setAvatar] = useState('images/default-avatar.jpg')
+    useEffect(() => {
+        return () => URL.revokeObjectURL(avatar) 
+    } , [avatar])
+    const handleClick = () => {
+        inputRef.current?.click() 
+    }
+    const handleChange = (e) => {
+        const file = e.target.files[0] 
+        if (file) 
+        {
+            const url = URL.createObjectURL(file) 
+            setAvatar(url)
+        }
+    }
+    return (    
         <div className='col-span-12 px-8 min-h-20 flex items-center justify-between gap-8'>
             <div className='flex items-center min-h-20 flex-col gap-4 justify-between'>
-                <div className='rounded-full w-50 h-50 bg-black bg-center bg-cover bg-no-repeat'>
+                <div 
+                    className='rounded-full w-50 h-50 bg-black cursor-pointer bg-center bg-cover bg-no-repeat'
+                    onClick={handleClick}
+                    style={{ backgroundImage: `url(${avatar})` }}
+                >
                 </div>
                 {/* Dia chi noi o */}
-
+            <input 
+                ref={inputRef} 
+                type='file' 
+                className='hidden w-0 h-0'
+                onChange={() => handleChange(e)}
+            />
             </div>
             <div className='flex flex-col items-start justify-start gap-4  w-full min-h-20'>
                 <div className='w-full flex items-start flex-col justify-start gap-1'>
