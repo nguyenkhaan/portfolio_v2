@@ -1,13 +1,18 @@
 import Home from "../Pages/Home"
-import Print from "../Pages/Print"
+import Blog from "../Pages/Blog" 
+import CV from "../Pages/CV"
 const router = [
     {
         path: '/home', 
         element: Home 
     }, 
     {
-        path: '/print', 
-        element: Print
+        path: '/blog', 
+        element: Blog 
+    }, 
+    {
+        path: '/my-cv', 
+        element: CV
     }
 ] 
 export default router 
