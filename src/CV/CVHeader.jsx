@@ -16,6 +16,7 @@ function CVHeader() {
         {
             const url = URL.createObjectURL(file) 
             setAvatar(url)
+            console.log(url) 
         }
     }
     return (    
@@ -32,7 +33,7 @@ function CVHeader() {
                 ref={inputRef} 
                 type='file' 
                 className='hidden w-0 h-0'
-                onChange={() => handleChange(e)}
+                onChange={(e) => handleChange(e)}
             />
             </div>
             <div className='flex flex-col items-start justify-start gap-4  w-full min-h-20'>

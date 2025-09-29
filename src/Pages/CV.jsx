@@ -17,8 +17,8 @@ function CV() {
     })
     return (
         <div className='w-full flex flex-col items-center justify-center'>
-            <div className='print-container min-h-80 w-[800px] relative grid grid-cols-12 gap-0 border-solid border-1 border-black shadow-2xl pt-8' ref={componentRef}>
-                <div className='col-span-12 header-contact-print'>
+            <div className='print-container min-h-[1122px] w-[800px] relative grid grid-cols-12 gap-0 border-solid border-1 border-black shadow-2xl pt-8' ref={componentRef}>
+                <div className='col-span-12 header-contact-print max-h-36'>
                     <CVHeader />
                     <Contact /> 
                 </div>
