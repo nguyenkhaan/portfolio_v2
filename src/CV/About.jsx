@@ -8,7 +8,7 @@ function About() {
     Hướng tới việc áp dụng kiến thức và kỹ năng để tạo ra sản phẩm phần mềm chất lượng, sáng tạo và bền vững.`
     return (
         <div className='bg-gray-800 w-full text-white text-base p-4'>
-            <h2 className='font-semibold text-2xl uppercase mb-2'>VỀ BẢN THÂN</h2>
+            <InputCV editorStyle={{ fontWeight: 600, textTransform: 'uppercase', fontSize: '24px' }} initialValue='Về bản thân' />
             <InputCV initialValue={initialProfile} containerStyle='w-full' editorStyle={{ width: '100%', textAlign: 'justify' }} />
         </div>
     )

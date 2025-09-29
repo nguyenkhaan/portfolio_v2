@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import InputKnowledgeItem from './InputKnowledggItem'
 import { useState } from 'react'
+import InputKnowledgeItem from './InputKnowledggItem'
+import Heading from './Heading'
 function Knowledge() {
     const [representArray, setRepresentArray] = useState([1])
     const handleInputClick = (type, index) => {
@@ -22,13 +23,13 @@ function Knowledge() {
     }
     return (
         <div className='bg-gray-800 w-full text-white text-base p-4'>
-            <h2 className='font-semibold text-2xl uppercase mb-4'>
-                Học vấn
+            <div className='flex items-center w-full justify-start'>
+                <Heading initialValue='học vấn'/>
                 <i
-                    class="fa-solid fa-square-plus text-blue-500 cursor-pointer text-xl ml-2 no-print"
+                    class="fa-solid fa-square-plus text-blue-500 mb-3 cursor-pointer text-xl ml-2 no-print"
                     onClick={() => handleInputClick('add', representArray.length)}
                 ></i>
-            </h2>
+            </div>
             <div className='w-full items-start flex flex-col gap-4 justify-between'>
                 {representArray.map((value, index) => <InputKnowledgeItem index={index} handleInputClick={handleInputClick} />)}
             </div>

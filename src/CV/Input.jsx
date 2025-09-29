@@ -17,10 +17,11 @@ function InputCV({initialValue = '' , editorStyle = {} , containerStyle = ''}) {
         }
     }, [focused])
     return (
-        <div ref = { editorRef } className = {`relative inline-block text-justify ${containerStyle}`} >
+        <div ref = { editorRef } className = {`relative inline-block items-center text-justify ${containerStyle}`} >
             <Editor
                 value={text}
-                onTextChange={(e) => setText(e.htmlValue)} style={{border: 0, fontSize: '16px', padding: 0, width: '100%', alignItems: 'center', flex: 1, ...editorStyle }}
+                onTextChange={(e) => setText(e.htmlValue)} 
+                style={{border: 0, fontSize: '16px', padding: 0, width: '100%', alignItems: 'center', flex: 1, ...editorStyle }}
                 onBlur={(e) => {
                     console.log('Ban da blur ra ngoai')
                     if (editorRef.current && e.relatedTarget && editorRef.current.contains(e.relatedTarget)) return;
