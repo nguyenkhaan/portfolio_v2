@@ -5,16 +5,21 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 const datas = [
     {
-        heading: 'User experience',
-        content: '1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.'
+        heading: '1. Mục tiêu',
+        content:  `Mình đang là sinh viên ngành Kĩ thuật phần mềm của Trường ĐH CNTT - ĐHQG.TPHCM. Mục tiêu dài hạn của
+        minh trong tương lai là trở thành một Fullstack Developer, làm chủ cả Frontend và Backend, thêm một chút kiến thức
+        trong lĩnh vực bảo mật nữa. Tuy rằng bản thân còn nhiều khiếm khuyết, nhưng mình nhất định sẽ cố hết sức ☁️`
     },
     {
-        heading: 'Working Skills',
-        content: '2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.'
+        heading: '2. Kỹ năng chuyên môn',
+        content: `Mình có nền tảng vững về C++, JavaScript, TypeScript, Python, cùng kiến thức cơ sở dữ liệu MySQL và MongoDB. Trong phát triển web, mình quen thuộc với các framework và thư viện như ReactJS, ExpressJS, và Tailwind CSS. 
+        Hiện tại mình cũng đang có một chút hứng thú với các con game, nên mình đang chủ động tìm hiểu thêm ngôn ngữ lập trình C#.`
     },
     {
-        heading: 'Checking List',
-        content: '3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.'
+        heading: '3. Kỹ năng mềm',
+        content: `Minh có điểm mạnh trong lĩnh vực thuyết trình, đặc biệt là giảng dạy và truyền đạt kiến thức cho mọi người, 
+        nhờ có nhiều năm làm việc trong BHT CNPM. Tuy nhiên, bản thân mình cũng khá yếu trong khoản giữ cảm xúc của bản thân, quản lý công việc, 
+        cũng như mình đang cố gắng trau dồi thêm khả năng ngoại ngữ.`
     }
 ]
 function JobDetail() {

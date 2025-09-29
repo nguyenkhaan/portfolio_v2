@@ -17,12 +17,12 @@ function CV() {
     })
     return (
         <div className='w-full flex flex-col items-center justify-center'>
-            <div className='print-container min-h-[1122px] w-[800px] relative grid grid-cols-12 gap-0 border-solid border-1 border-black shadow-2xl pt-8' ref={componentRef}>
+            <div className='print-container h-[1122px] max-h-[1122px] items-stretch w-[800px] relative grid grid-cols-12 gap-0 border-solid grid-rows-[18rem_1fr] border-1 border-black shadow-2xl pt-8' ref={componentRef}>
                 <div className='col-span-12 header-contact-print max-h-36'>
                     <CVHeader />
                     <Contact /> 
                 </div>
-                <div className='col-span-5 flex items-center flex-col justify-start gap-1 min-h-80'>
+                <div className='content col-span-5  flex items-center flex-col justify-start gap-1 min-h-100'>
                     <About />
                     <Knowledge />
                     <Skills /> 
