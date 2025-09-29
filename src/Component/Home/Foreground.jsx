@@ -8,9 +8,8 @@ function Foreground() {
         >
             <div className='absolute top-0 left-0 bg-black right-0  flex-col bottom-0 opacity-50 flex items-center justify-center'>
                 <h2 className='font-bold text-3xl md:text-4xl px-20 md:px-60 md:leading-12 block text-center line-clamp-2 w-full text-white'>Do you have any Idea?
-                    <br />Let's talk about your work progress</h2>
-                <span className='text-lg hidden md:block text-white text-center w-full px-20 lg:px-80 my-4'>There are many variations of passages of Lorem Ipsum available,
-                    but the majority have suffered alteration.
+                    <br />Let's share me about your work progress ⋆.ೃ࿔☁️ ݁ ˖*༄ · ⋆｡ﾟ☁︎｡⋆.</h2>
+                <span className='text-lg hidden md:block text-white text-center w-full px-20 lg:px-80 my-4'>Thế giới lập trình còn rất nhiều điều thú vị? Chúng ta hãy cùng nhau khám phá nhé 
                 </span>
             </div>
         </div>
