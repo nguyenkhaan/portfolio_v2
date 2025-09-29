@@ -11,37 +11,46 @@ import Achievement from '../CV/Achievement'
 import Promise from '../CV/Promise'
 
 function CV() {
-    const componentRef = useRef(null) 
+    const componentRef = useRef(null)
     const handlePrintPage = useReactToPrint({
         contentRef: componentRef
     })
     return (
-        <div className='w-full flex flex-col items-center justify-center'>
-            <div className='print-container h-[1122px] max-h-[1122px] items-stretch w-[800px] relative grid grid-cols-12 gap-0 border-solid grid-rows-[18rem_1fr] border-1 border-black shadow-2xl pt-8' ref={componentRef}>
-                <div className='col-span-12 header-contact-print max-h-36'>
-                    <CVHeader />
-                    <Contact /> 
+        <>
+            {(window.innerWidth <= 800) ?
+                <div className='z-99999 absolute flex items-center top-0 text-center leading-[42px] font-semibold justify-center text-3xl bottom-0 bg-black left-0 right-0 opacity-60 text-white'>
+                    Coming Soon! Hiện tại dịch vụ tạo CV chưa hỗ trợ trên Mobile. 
+                    Sử dụng Laptop để có trải nghiêm tốt nhất nhé 
                 </div>
-                <div className='content col-span-5  flex items-center flex-col justify-start gap-1 min-h-100'>
-                    <About />
-                    <Knowledge />
-                    <Skills /> 
+                :
+                <div className='w-full flex flex-col relative items-center justify-center'>
+                    <div className='print-container h-[1122px] max-h-[1122px] items-stretch w-[800px] relative grid grid-cols-12 gap-0 border-solid grid-rows-[18rem_1fr] border-1 border-black shadow-2xl pt-8' ref={componentRef}>
+                        <div className='col-span-12 header-contact-print max-h-36'>
+                            <CVHeader />
+                            <Contact />
+                        </div>
+                        <div className='content col-span-5  flex items-center flex-col justify-start gap-1 min-h-100'>
+                            <About />
+                            <Knowledge />
+                            <Skills />
+                        </div>
+                        <div className='col-span-7 bg-blue-950 flex items-center flex-col justify-start gap-0.5 min-h-80'>
+                            <Achievement className='cv-section' heading='Thành tích' sampleContent='Huy chương Đồng Tin học, Olympic 30/4' />
+                            <Achievement className='cv-section' heading='Kinh nghiệm thực tế' sampleContent='Gia sư Toán - Lý - Hóa (lớp 8), 1 kèm 1 trực tiếp' />
+                            <Promise />
+                        </div>
+                    </div>
+                    <motion.button
+                        className='right-0 top-0 px-7 py-4 no-print mt-8 bg-blue-600 rounded-lg text-xl cursor-pointer text-white font-semibold' onClick={handlePrintPage}
+                        initial={{ scale: 1 }}
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                    >
+                        Publish CV
+                    </motion.button>
                 </div>
-                <div className='col-span-7 bg-blue-950 flex items-center flex-col justify-start gap-0.5 min-h-80'>
-                    <Achievement className = 'cv-section' heading = 'Thành tích' sampleContent = 'Huy chương Đồng Tin học, Olympic 30/4' /> 
-                    <Achievement className = 'cv-section' heading = 'Kinh nghiệm thực tế' sampleContent = 'Gia sư Toán - Lý - Hóa (lớp 8), 1 kèm 1 trực tiếp'/> 
-                    <Promise /> 
-                </div>
-            </div>
-            <motion.button 
-                    className='right-0 top-0 px-7 py-4 no-print mt-8 bg-blue-600 rounded-lg text-xl cursor-pointer text-white font-semibold' onClick={handlePrintPage}
-                    initial={{scale: 1}} 
-                    whileHover={{scale: 1.1}} 
-                    transition={{duration: 0.3, ease:"easeInOut"}}
-                >
-                Publish CV
-            </motion.button>
-        </div>
+            }
+        </>
     )
 }
 export default CV 
