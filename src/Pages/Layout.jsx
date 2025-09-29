@@ -6,7 +6,7 @@ import router from '../Routes/route'
 function Layout()
 {
     return (
-        <div className='w-full'>
+        <div className='w-full flex items-center justify-center'>
             <Routes>
                 {router.map((routeInfo) => {
                     return <Route path={routeInfo.path} element={React.createElement(routeInfo.element)} /> 

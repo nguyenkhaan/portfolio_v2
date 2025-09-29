@@ -9,10 +9,13 @@ function Profile() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-            <div className='flex-1 flex flex-col justify-center items-start gap-7'>
-                <h2 className='font-bold text-3xl'>Hi, I Am John, A Creative Duelist</h2>
+            <div className='flex-1 flex flex-col justify-center items-start gap-6'>
+                <h2 className='font-bold text-3xl inline-block'>Hi, I am An <br/> a Fullstack Developer</h2>
                 <span>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    Xin chào, mình là <strong>An</strong>, mọi người có thể gọi mình là <strong>Cloudian</strong>. 
+                    Mình yêu thích việc xây dựng ứng dụng web hiện đại, từ giao diện người dùng đến hệ thống backend. 
+                    Trang Portfolio này là nơi mình chia sẻ quá trình học tập, các dự án tiêu biểu và những công nghệ mình đang khám phá. Một lần nữa, cảm 
+                    ơn vì đã đến ⋆｡ ﾟ☁︎｡ ⋆｡ ﾟ☀︎｡ ⋆｡ ﾟ.
                 </span>
                 <button className='py-2.5 px-6 hover:scale-[1.1] hover:cursor-pointer hover:transition-all hover:duration-300 hover:ease-in-out font-bold text-base text-white rounded-sm'
                     style={{ backgroundColor: '#FF6464' }}

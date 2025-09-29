@@ -16,7 +16,6 @@ function Home()
     }); 
     return (
         <div ref={componentRef}>     
-            <button onClick={handlePrintPage}>Print trang nay di em</button>
             <Profile />        
             <RecentBlogs /> 
             <Feature />    
