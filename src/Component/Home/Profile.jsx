@@ -17,9 +17,11 @@ function Profile() {
                     Trang Portfolio này là nơi mình chia sẻ quá trình học tập, các dự án tiêu biểu và những công nghệ mình đang khám phá. Một lần nữa, cảm 
                     ơn vì đã đến ⋆｡ ﾟ☁︎｡ ⋆｡ ﾟ☀︎｡ ⋆｡ ﾟ.
                 </span>
-                <button className='py-2.5 px-6 hover:scale-[1.1] hover:cursor-pointer hover:transition-all hover:duration-300 hover:ease-in-out font-bold text-base text-white rounded-sm'
-                    style={{ backgroundColor: '#FF6464' }}
-                ><i class="bi bi-arrow-down-square-fill"></i> Dowload my CV</button>
+                <a href='https://drive.google.com/file/d/1PCbVcg8xUWwLvrRfPgCJfNohVGF5gZGT/view?usp=sharing'>
+                    <button className='py-2.5 px-6 hover:scale-[1.1] hover:cursor-pointer hover:transition-all hover:duration-300 hover:ease-in-out font-bold text-base text-white rounded-sm'
+                        style={{ backgroundColor: '#FF6464' }}
+                    ><i class="bi bi-arrow-down-square-fill"></i> Dowload my CV</button>
+                </a>
             </div>
             <div className='flex-1 flex items-center justify-end'>
                 <motion.div
