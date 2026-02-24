@@ -5,20 +5,19 @@ import RecentItem from './RecentItem'
 function RecentBlogs() {
     const datas = [
         {
-            heading: 'Blogging Website', 
-            start: '01-08-2025', 
+            heading: 'Rainy Word Adventure', 
+            start: '2024', 
             end: 'No', 
-            description: `Website cho phép người dùng đọc, viết và xuất bản blog cá nhân một cách nhanh chóng. Ứng dụng được xây dựng trên MERN Stack (MongoDB, Express, React, Node.js), mang lại trải nghiệm mượt mà và dễ sử dụng.
-            Đây là dự án có vai trò rất quan trọng trong hành trình của mình, là dự án đầu tiên mình đưng dưới vai trò là một FE lẫn BE Developer 𐔌՞. .՞𐦯.
-            `, 
-            link : 'https://www.facebook.com/share/p/14HYFx4Ubpe/'
+            description: `Website hỗ trợ cho trẻ em Tiểu học học tập và luyện tập Tiếng anh. Giao diện thân thiện, 
+            cuốn hút, hấp dẫn trẻ học Tiếng anh thông qua các trò chơi, giải đố trên websie.`, 
+            link : 'https://rainywords.uit.edu.vn/'
         }, 
         {
             heading: 'Portfolio Website', 
             start: '27-09-2025', 
             end: 'No', 
             description: 'Trang Portfolio cá nhân được thiết kế theo phong cách minimalist pha lẫn chút hiện đại. Rất thích hợp cho mấy đứa mây mây, làm màu như mình. Đặc biệt trang web còn tích hợp chức năng tạo CV nữa (P/S: Chiếc Resume bạn bấm dow ở trên là được tạo ra từ website này đấy)', 
-            link: '' 
+            link: 'https://portfolio.cloudian.io.vn' 
         }
     ]
     return (
